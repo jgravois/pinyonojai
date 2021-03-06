@@ -1,0 +1,51 @@
+.grid {
+  --gap: 0px;
+  display: grid;
+  gap: var(--gap);
+
+  /* Using clamp() */
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(
+        clamp(
+          50% - var(--gap),
+          (50rem - 100%) * 999,
+          100%),
+        1fr
+      )
+    );
+}
+
+.item {
+  padding: 3rem 6rem;
+  text-align: center;
+}
+
+.logo {
+  background: #fbf5dd;
+  color: #1a4f09;
+}
+
+.delivery {
+  background: #d87449;
+  color: #fbf5dd;
+}
+
+.catering {
+  background: #ffea93;
+  color: #d87449;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Fjalla One", sans-serif;
+  text-transform: uppercase;
+  background: lightgrey;
+}
