@@ -29,18 +29,22 @@
 }
 
 .logo {
-  background: #fbf5dd;
-  color: #1a4f09;
+  background: #F3F3DE;
+  color: #1E3C1E;
+}
+
+.froggy {
+  width: 7rem;
 }
 
 .delivery {
-  background: #d87449;
-  color: #fbf5dd;
+  background: #DB6F48;
+  color: #F3F3DE;
 }
 
 .catering {
-  background: #ffea93;
-  color: #d87449;
+  background: #F1DC73;
+  color: #B53707;
 }
 
 h3 {
@@ -53,5 +57,4 @@ body {
   margin: 0;
   font-family: "DotGothic16", sans-serif;
   text-transform: uppercase;
-  background: lightgrey;
 }

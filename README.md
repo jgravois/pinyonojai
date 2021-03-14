@@ -1,8 +1,13 @@
 # `TODO:`
 
 - [x] lay it out
+- [x] froggy.svg
+- [x] real colors
 - [ ] real font
-- [ ] logo.svg
 - [ ] real photos
-- [ ] scale text gradually
+
+## extra credit
+
+- [ ] scale text size (gradually)
 - [ ] favicon
+- [ ] defer loading images/css/etc.
