@@ -9,7 +9,7 @@
       auto-fit,
       minmax(
         clamp(
-          50% - var(--gap),
+          100% - var(--gap),
           (50rem - 100%) * 999,
           100%),
         1fr
@@ -18,7 +18,7 @@
 }
 
 .item {
-  padding: 3rem 6rem;
+  padding: 3rem 10rem;
   text-align: center;
 }
 
@@ -47,14 +47,32 @@
   color: #B53707;
 }
 
-h3 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
 body {
   padding: 0;
   margin: 0;
-  font-family: "DotGothic16", sans-serif;
+  font-family: Pinyon, sans-serif;
   text-transform: uppercase;
+}
+
+h1, h2 {
+  font-family: PinyonBold;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+
+@font-face {
+  font-family: Pinyon;
+  src: url("assets/pinyon.otf") format("opentype");
+}
+
+@font-face {
+  font-family: PinyonBold;
+  font-weight: bold;
+  src: url("assets/pinyon_bold.otf") format("opentype");
 }

@@ -3,10 +3,10 @@
 - [x] lay it out
 - [x] froggy.svg
 - [x] real colors
-- [ ] real font
-- [ ] real photos
+- [x] custom font
+- [ ] photo grid
 
-## extra credit
+## bonus
 
 - [ ] scale text size (gradually)
 - [ ] favicon
