@@ -18,7 +18,7 @@
 }
 
 .item {
-  padding: 3rem 10rem;
+  padding: 3rem 8rem;
   text-align: center;
 }
 
@@ -50,12 +50,12 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: Pinyon, sans-serif;
+  font-family: 'Pinyon', sans-serif;
   text-transform: uppercase;
 }
 
 h1, h2 {
-  font-family: PinyonBold;
+  font-family: 'PinyonBold';
   margin-bottom: 0.5rem;
 }
 
@@ -67,12 +67,12 @@ h2 {
 }
 
 @font-face {
-  font-family: Pinyon;
+  font-family: 'Pinyon';
   src: url("assets/pinyon.otf") format("opentype");
 }
 
 @font-face {
-  font-family: PinyonBold;
+  font-family: 'PinyonBold';
   font-weight: bold;
   src: url("assets/pinyon_bold.otf") format("opentype");
 }
