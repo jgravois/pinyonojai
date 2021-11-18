@@ -22,19 +22,14 @@
   text-align: center;
 }
 
-.pizza-box {
-  background-image: url('./assets/pizza-box.png');
-  background-origin: border-box;
-  background-repeat: repeat;
-}
-
 .logo {
   background: #F3F3DE;
   color: #1E3C1E;
 }
 
-.froggy {
-  width: 7rem;
+.hours {
+  background: #1E3C1E;
+  color: #F3F3DE;
 }
 
 .delivery {
@@ -43,8 +38,12 @@
 }
 
 .catering {
-  background: #F1DC73;
-  color: #B53707;
+  background: #F3F3DE;
+  color: #DB6F48;
+}
+
+.froggy {
+  width: 7rem;
 }
 
 body {
@@ -60,10 +59,14 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 h2 {
   font-size: 2rem;
+}
+
+ul {
+  list-style-type: none;
 }
 
 @font-face {
