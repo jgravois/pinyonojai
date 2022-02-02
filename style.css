@@ -69,6 +69,18 @@ ul {
   list-style-type: none;
 }
 
+.light-link {
+  color: lightblue;
+}
+
+.light-link:hover {
+  color: greenyellow;
+}
+
+.dark-link:hover {
+  color: darkgreen;
+}
+
 @font-face {
   font-family: 'Pinyon';
   src: url("assets/pinyon.otf") format("opentype");
