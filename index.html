@@ -5,43 +5,86 @@
   <meta name="viewport" content="width=device-width">
   <meta name="Description" content="unspecified naturally leavened bread products and minimally intervened grape juices in ojai, ca">
   <title>pinyon ojai</title>
-  <link rel="stylesheet" href="./style.css"/>
+  <link rel="stylesheet" href="/style.css"/>
 </head>
 <body>
-  <div class="grid">
-    <div class="item logo">
-      <h1>pinyon ojai</h1>
-      <img class="froggy" src="./assets/frog-logo.svg"/>
-      <p>423 E Ojai Ave, Ojai, CA</p>
+  <header class="flex-grid">
+    <div class="col">
+      <p>hours</p>
     </div>
-    <div class="item hours">
-      <h2>hours</h2>
-      <p>thursday-sunday</p>
-      <p>11-3pm -
-        <a class="light-link" href="/menu/day.pdf">menu</a>
-      </p>
-      <p>4-9pm -
-        <a class="light-link"href="/menu/night.pdf">menu</a>
-      </p>
-      <p>wine store open all day</p>
+    <div class="col">
+      <p>order</p>
     </div>
-    <div class="item delivery">
-      <h2>reserve &amp; order</h2>
-      <p>reserve your table on
-        <a class="dark-link" href="https://resy.com/cities/ojc/pinyon-ojai">resy</a>
-      </p>
-      <p>to go orders:
-        <a class="dark-link" href="https://shop.pinyonojai.com">shop.pinyonojai.com</a>
-      </p>
+    <div class="col">
+      <p>catering</p>
     </div>
-    <div class="item catering">
-      <h2>catering</h2>
-        <p>we are available for private events including but not limited to:</p>
-        <p>weddings, birthday parties, quinceaneras, baby showers, brunch gatherings, ragers, divorces</p>
-        <p>for inquiries, please email
-          <a class="dark-link" href="mailto:pinyonojai@gmail.com">pinyonojai@gmail.com</a>
-        </p>
+    <div class="col">
+      <p>ig</p>
     </div>
-  </div>
+    <div class="col">
+      <p>wine club</p>
+    </div>
+    <div class="col">
+      <p>about</p>
+    </div>
+  </header>
+  <img
+    class="hero"
+    src="/assets/hero.png"
+    alt="Pinyon - 423 E Ojai Ave, Ojai, CA"/>
+  <main>
+    <div class="flex-grid">
+      <div class="col">
+        <div class="cell hours">
+          <h2>hours</h2>
+          <p>thursday-sunday</p>
+          <p>11-3pm -
+            <a class="dark-link" href="/menu/day.pdf">menu</a>
+          </p>
+          <p>4-9pm -
+            <a class="dark-link"href="/menu/night.pdf">menu</a>
+          </p>
+        </div>
+        <div class="cell catering">
+          <a class="light-link" href="/catering/">
+            <h1>catering</h1>
+            <p>offsite</p>
+            <p>in house</p>
+          </a>
+        </div>
+        <div class="cell hours">
+          <h1>wine club</h1>
+          <p>$90 monthly membership includes:</p>
+          <p>three hand selected wines from sally each month, including one exclusive to wine club members.</p>
+          <p>wine newsletter featuring in depth descriptions, producer spotlights and tasting notes.</p>
+          <p>10% off all wine and merch in the shop.</p>
+          <p>join us!</p>
+        </div>
+      </div>
+      <div class="col col-2">
+        <div class="cell order">
+          <h1>order now</h1>
+          <p>
+            <a class="light-link" href="https://shop.pinyonojai.com">pickup</a>
+          </p>
+          <p>
+            <a class="light-link" href="https://resy.com/cities/ojc/pinyon-ojai">reserve</a>
+          </p>
+        </div>
+        <div class="cell social">
+          <h1>press</h1>
+          <p>link tk</p>
+          <p>link tk</p>
+          <p>link tk</p>
+        </div>
+        <div class="cell order">
+          <h1>about us</h1>
+          <p>based in ojai, ca, pinyon is a family and friend-run, wood-fired pizzeria, bakery and natural wine shop.</p>
+          <p>we are committed to sourcing from local farmers and like-minded artisans, building an equitable and fulfilling work environment for our team and providing high quality, delicious food and beverage to the ojai valley.</p>
+        </div>
+      </div>
+    </div>
+    <img class="froggy" src="/assets/frog-logo.svg"/>
+  </main>
 </body>
 </html>

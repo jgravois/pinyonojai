@@ -1,51 +1,3 @@
-.grid {
-  --gap: 0px;
-  display: grid;
-  gap: var(--gap);
-
-  /* Using clamp() */
-  grid-template-columns:
-    repeat(
-      auto-fit,
-      minmax(
-        clamp(
-          100% - var(--gap),
-          (50rem - 100%) * 999,
-          100%),
-        1fr
-      )
-    );
-}
-
-.item {
-  padding: 3rem 8rem;
-  text-align: center;
-}
-
-.logo {
-  background: #F3F3DE;
-  color: #1E3C1E;
-}
-
-.hours {
-  background: #1E3C1E;
-  color: #F3F3DE;
-}
-
-.delivery {
-  background: #DB6F48;
-  color: #F3F3DE;
-}
-
-.catering {
-  background: #F3F3DE;
-  color: #DB6F48;
-}
-
-.froggy {
-  width: 7rem;
-}
-
 body {
   padding: 0;
   margin: 0;
@@ -55,18 +7,65 @@ body {
 
 h1, h2 {
   font-family: 'PinyonBold';
-  margin-bottom: 0.5rem;
 }
 
-h1 {
-  font-size: 4rem;
-}
-h2 {
-  font-size: 2rem;
+@font-face {
+  font-family: 'Pinyon';
+  src: url("assets/pinyon.otf") format("opentype");
 }
 
-ul {
-  list-style-type: none;
+@font-face {
+  font-family: 'PinyonBold';
+  font-weight: bold;
+  src: url("assets/pinyon_bold.otf") format("opentype");
+}
+
+:root {
+  --green: #1e3c1e;
+  --offwhite: #f3f3de;
+  --brown: #3e2805;
+}
+
+.hero {
+  width: 100%
+}
+
+.cell {
+  padding: 5rem 20px;
+  margin-top: -2px;
+}
+
+.hours {
+  background-color: var(--offwhite);
+  color: var(--green);
+}
+
+.catering {
+  background-color: var(--green);
+  color: var(--offwhite);
+}
+
+.order {
+  background-color: var(--brown);
+  color: var(--offwhite);
+}
+
+.social {
+  background-color: var(--offwhite);
+  color: var(--brown);
+}
+
+.flex-grid {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+  text-align: center;
+}
+
+.col-2 {
+  background-color: palegoldenrod;
 }
 
 .light-link {
@@ -81,13 +80,12 @@ ul {
   color: darkgreen;
 }
 
-@font-face {
-  font-family: 'Pinyon';
-  src: url("assets/pinyon.otf") format("opentype");
+.froggy {
+  width: 7rem;
 }
 
-@font-face {
-  font-family: 'PinyonBold';
-  font-weight: bold;
-  src: url("assets/pinyon_bold.otf") format("opentype");
+@media (max-width: 600px) {
+  .flex-grid {
+    display: block;
+  }
 }
