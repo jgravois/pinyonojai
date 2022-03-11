@@ -69,15 +69,19 @@ h1, h2 {
 }
 
 .light-link {
-  color: lightblue;
-}
-
-.light-link:hover {
   color: greenyellow;
 }
 
+.light-link:hover {
+  color: var(--offwhite);
+}
+
+.dark-link {
+  color: var(--green);
+}
+
 .dark-link:hover {
-  color: darkgreen;
+  color: greenyellow;
 }
 
 .froggy {
