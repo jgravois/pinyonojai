@@ -36,7 +36,7 @@ h1, h2 {
 .cell {
   padding: 5rem 50px;
   margin-top: -2px;
-  min-height: 180px;
+  min-height: 200px;
 }
 
 .big-cell {
@@ -77,20 +77,20 @@ h1, h2 {
   text-align: center;
 }
 
+a {
+  color: var(--green);
+}
+
+a:hover {
+  color: green;
+}
+
 .light-link {
   color: var(--offwhite);
 }
 
 .light-link:hover {
   color: greenyellow;
-}
-
-.dark-link {
-  color: var(--green);
-}
-
-.dark-link:hover {
-  color: green;
 }
 
 .froggy {
