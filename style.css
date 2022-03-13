@@ -1,14 +1,17 @@
+:root {
+  --green: #254A2D;
+  --offwhite: #FCF1DE;
+  --red: #A9422E;
+  --yellow: #F2E599;
+}
+
 body {
   padding: 0;
   margin: 0;
   font-family: 'Pinyon', sans-serif;
   text-transform: uppercase;
-  background-color: var(--yellow);
+  background-color: var(--offwhite);
   color: var(--green);
-}
-
-h1, h2 {
-  font-family: 'PinyonBold';
 }
 
 @font-face {
@@ -20,61 +23,6 @@ h1, h2 {
   font-family: 'PinyonBold';
   font-weight: bold;
   src: url("assets/pinyon_bold.otf") format("opentype");
-}
-
-:root {
-  --green: #254A2D;
-  --offwhite: #FCF1DE;
-  --red: #A9422E;
-  --yellow: #F2E599;
-}
-
-.hero {
-  width: 100%
-}
-
-.cell {
-  padding: 5rem 50px;
-  margin-top: -2px;
-  min-height: 200px;
-}
-
-.big-cell {
-  min-height: 300px;
-}
-
-.hours {
-  background-color: var(--offwhite);
-  color: var(--green);
-}
-
-.onsite {
-  background-color: var(--green);
-  color: var(--yellow);
-}
-
-.offsite {
-  background-color: var(--green);
-  color: var(--yellow);
-}
-
-.order {
-  background-color: var(--red);
-  color: var(--offwhite);
-}
-
-.social {
-  background-color: var(--yellow);
-  color: var(--red);
-}
-
-.flex-grid {
-  display: flex;
-}
-
-.col {
-  flex: 1;
-  text-align: center;
 }
 
 a {
@@ -95,6 +43,52 @@ a:hover {
 
 .froggy {
   width: 7rem;
+}
+
+h1, h2 {
+  font-family: 'PinyonBold';
+}
+
+.hero {
+  width: 100%
+}
+
+.hours {
+  background-color: var(--offwhite);
+}
+
+.onsite {
+  background-color: var(--green);
+  color: var(--yellow);
+}
+
+.offsite {
+  background-color: var(--green);
+  color: var(--yellow);
+}
+
+.order {
+  background-color: var(--red);
+  color: var(--offwhite);
+}
+
+.press {
+  background-color: var(--yellow);
+  color: var(--red);
+}
+
+.flex-grid {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+  text-align: center;
+}
+
+.col > div {
+  padding: 5rem 50px;
+  margin-top: -4px;
 }
 
 @media (max-width: 600px) {
