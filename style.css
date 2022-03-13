@@ -3,6 +3,8 @@ body {
   margin: 0;
   font-family: 'Pinyon', sans-serif;
   text-transform: uppercase;
+  background-color: var(--yellow);
+  color: var(--green);
 }
 
 h1, h2 {
@@ -21,9 +23,10 @@ h1, h2 {
 }
 
 :root {
-  --green: #1e3c1e;
-  --offwhite: #f3f3de;
-  --brown: #3e2805;
+  --green: #254A2D;
+  --offwhite: #FCF1DE;
+  --red: #A9422E;
+  --yellow: #F2E599;
 }
 
 .hero {
@@ -31,8 +34,13 @@ h1, h2 {
 }
 
 .cell {
-  padding: 5rem 20px;
+  padding: 5rem 50px;
   margin-top: -2px;
+  min-height: 180px;
+}
+
+.big-cell {
+  min-height: 300px;
 }
 
 .hours {
@@ -40,19 +48,24 @@ h1, h2 {
   color: var(--green);
 }
 
-.catering {
+.onsite {
   background-color: var(--green);
-  color: var(--offwhite);
+  color: var(--yellow);
+}
+
+.offsite {
+  background-color: var(--green);
+  color: var(--yellow);
 }
 
 .order {
-  background-color: var(--brown);
+  background-color: var(--red);
   color: var(--offwhite);
 }
 
 .social {
-  background-color: var(--offwhite);
-  color: var(--brown);
+  background-color: var(--yellow);
+  color: var(--red);
 }
 
 .flex-grid {
@@ -64,16 +77,12 @@ h1, h2 {
   text-align: center;
 }
 
-.col-2 {
-  background-color: palegoldenrod;
-}
-
 .light-link {
-  color: greenyellow;
+  color: var(--offwhite);
 }
 
 .light-link:hover {
-  color: var(--offwhite);
+  color: greenyellow;
 }
 
 .dark-link {
@@ -81,7 +90,7 @@ h1, h2 {
 }
 
 .dark-link:hover {
-  color: greenyellow;
+  color: green;
 }
 
 .froggy {

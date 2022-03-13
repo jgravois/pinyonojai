@@ -2,10 +2,10 @@
   <defs>
     <style>
     .inside {
-      fill: #F3F3DE;
+      fill: #F2E599;
     }
     .outside {
-      fill: #1E3C1E;
+      fill: #254A2D;
     }
 </style>
   </defs>
