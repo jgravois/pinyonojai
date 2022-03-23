@@ -1,49 +1,8 @@
-.grid {
-  --gap: 0px;
-  display: grid;
-  gap: var(--gap);
-
-  /* Using clamp() */
-  grid-template-columns:
-    repeat(
-      auto-fit,
-      minmax(
-        clamp(
-          100% - var(--gap),
-          (50rem - 100%) * 999,
-          100%),
-        1fr
-      )
-    );
-}
-
-.item {
-  padding: 3rem 8rem;
-  text-align: center;
-}
-
-.logo {
-  background: #F3F3DE;
-  color: #1E3C1E;
-}
-
-.hours {
-  background: #1E3C1E;
-  color: #F3F3DE;
-}
-
-.delivery {
-  background: #DB6F48;
-  color: #F3F3DE;
-}
-
-.catering {
-  background: #F3F3DE;
-  color: #DB6F48;
-}
-
-.froggy {
-  width: 7rem;
+:root {
+  --green: #254A2D;
+  --offwhite: #FCF1DE;
+  --red: #A9422E;
+  --yellow: #F2E599;
 }
 
 body {
@@ -51,34 +10,8 @@ body {
   margin: 0;
   font-family: 'Pinyon', sans-serif;
   text-transform: uppercase;
-}
-
-h1, h2 {
-  font-family: 'PinyonBold';
-  margin-bottom: 0.5rem;
-}
-
-h1 {
-  font-size: 4rem;
-}
-h2 {
-  font-size: 2rem;
-}
-
-ul {
-  list-style-type: none;
-}
-
-.light-link {
-  color: lightblue;
-}
-
-.light-link:hover {
-  color: greenyellow;
-}
-
-.dark-link:hover {
-  color: darkgreen;
+  background-color: var(--offwhite);
+  color: var(--green);
 }
 
 @font-face {
@@ -91,3 +24,91 @@ ul {
   font-weight: bold;
   src: url("assets/pinyon_bold.otf") format("opentype");
 }
+
+a {
+  color: var(--green);
+}
+
+a:hover {
+  color: green;
+}
+
+.red-link {
+  color: var(--red);
+}
+
+.light-link {
+  color: var(--offwhite);
+}
+
+.light-link:hover {
+  color: greenyellow;
+}
+
+.froggy {
+  width: 7rem;
+}
+
+h1, h2 {
+  font-family: 'PinyonBold';
+}
+
+.hero {
+  width: 100%
+}
+
+.col {
+  display: flex;
+  text-align: center;
+}
+
+.col > div {
+  flex-basis: 50%;
+  padding: 5rem 50px;
+  margin-top: -4px;
+}
+
+.flex-grid {
+  display: flex;
+}
+
+.nav {
+  flex: 1;
+  text-align: center;
+}
+
+.nav > div {
+  padding: 5rem 50px;
+  margin-top: -4px;
+}
+
+.hours {
+  background-color: var(--green);
+  color: var(--offwhite);
+}
+
+.order {
+  background-color: var(--offwhite);
+  color: var(--red);
+}
+
+.onsite {
+  background-color: var(--yellow);
+  color: var(--green);
+}
+
+.offsite {
+  background-color: var(--red);
+  color: var(--yellow);
+}
+
+@media (max-width: 600px) {
+  .col {
+    flex-direction: column;
+  }
+
+  .flex-grid {
+    display: block;
+  }
+}
+
